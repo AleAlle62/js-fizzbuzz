@@ -34,12 +34,12 @@ let inputSqaures35 = document.querySelector('.squares35')
 for ( let i = 1; i <= 100; i++) {
 
     // condizione del /3 
-    if (i % 3 === 0){
+    if (i % 3 === 0 && i % 5 != 0){
         inputSquare.innerHTML += `<div class="square3">${'Fizz'}</div>`
     }
 
     // condizione del /5 
-    if (i % 5 === 0){
+    if (i % 5 === 0 && i % 3 != 0){
         inputSquare.innerHTML += `<div class="square5">${'Buzz'}</div>`
     }
 
@@ -49,7 +49,7 @@ for ( let i = 1; i <= 100; i++) {
     }
 
     // resto
-    else {
+    if ( i % 3!= 0 && i % 5 != 0) {
         inputSquare.innerHTML += `<div class="square">${i}</div>`
     }
 }
