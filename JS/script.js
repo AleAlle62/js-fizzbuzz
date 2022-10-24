@@ -24,10 +24,10 @@ SVOLGIMENTO PROGRAMMA:
 
 */
 
-let inputSqaures = document.querySelector('.squares')
-// let inputSqaures3 = document.querySelector('.squares3')
-// let inputSqaures5 = document.querySelector('.squares5')
-// let inputSqaures35 = document.querySelector('.squares35')
+let inputSquare = document.querySelector('.square')
+let inputSqaures3 = document.querySelector('.squares3')
+let inputSqaures5 = document.querySelector('.squares5')
+let inputSqaures35 = document.querySelector('.squares35')
 
 
 
@@ -35,22 +35,22 @@ for ( let i = 1; i <= 100; i++) {
 
     // condizione del /3 
     if (i % 3 === 0){
-        inputSqaures.innerHTML += `<div class="square3">${'Fizz'}</div>`
+        inputSquare.innerHTML += `<div class="square3">${'Fizz'}</div>`
     }
 
     // condizione del /5 
     if (i % 5 === 0){
-        inputSqaures.innerHTML += `<div class="square5">${'Buzz'}</div>`
+        inputSquare.innerHTML += `<div class="square5">${'Buzz'}</div>`
     }
 
     // condizione del /3 e del /5
     if (i % 5 === 0 && i % 3 === 0){
-        inputSqaures.innerHTML += `<div class="square35">${'FizzBuzz'}</div>`
+        inputSquare.innerHTML += `<div class="square35">${'FizzBuzz'}</div>`
     }
 
     // resto
     else {
-        inputSqaures.innerHTML += `<div class="squares">${i}</div>`
+        inputSquare.innerHTML += `<div class="square">${i}</div>`
     }
 }
     
