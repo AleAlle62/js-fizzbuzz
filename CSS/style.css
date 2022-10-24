@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: salmon;
+	text-align: center;
+}
+
+
+.square1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 5em;
+}
+
+.square {
+    background-color: gold;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.square3 {
+    background-color: fuchsia;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.square35 {
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.square5 {
+    background-color: lime;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+
+
